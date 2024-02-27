@@ -22,14 +22,11 @@ function App() {
   },[search])
   console.log(search);
   return (
-    <div className="App">
+    <div className="App my-4 p-3 text-xl font-bold text-red-700 bg-slate-300">
       How's The Weather ?<br></br>
       <div className='max-w-sm m-auto p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-center' id="card-weather">
         <input onChange={(e) => setSearch(e.target.value)} className='text-3xl font-bold underline' type="text"/>
         {city && <City city={city} />}
-      </div>
-      <div class="mb-6">
-          <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Large input</label>
       </div>
     </div>
   );
