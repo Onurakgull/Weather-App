@@ -24,8 +24,12 @@ function App() {
   return (
     <div className="App">
       How's The Weather ?<br></br>
-      <input onChange={(e) => setSearch(e.target.value)} className='border-8 bg-slate-500' type="text"/>
+      
+      <input onChange={(e) => setSearch(e.target.value)} className='text-3xl font-bold underline' type="text"/>
       {city && <City city={city} />}
+      <div class="mb-6">
+          <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Large input</label>
+      </div>
     </div>
   );
 }
