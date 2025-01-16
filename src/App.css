@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.search-city {
+  border: 1px solid gray;
+  width: 100%;
+  color: #282c34;
+  padding: 3px;
+}

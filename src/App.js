@@ -24,8 +24,8 @@ function App() {
   return (
     <div className="App my-4 p-3 text-xl font-bold text-red-700 bg-slate-300">
       How's The Weather ?<br></br>
-      <div className='max-w-sm m-auto p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-center' id="card-weather">
-        <input onChange={(e) => setSearch(e.target.value)} className='text-3xl font-bold underline' type="text"/>
+      <div className='max-w-sm m-auto p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 text-center' id="card-weather">
+        <input onChange={(e) => setSearch(e.target.value)} className='search-city' type="text"/>
         {city && <City city={city} />}
       </div>
     </div>
