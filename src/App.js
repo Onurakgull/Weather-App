@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
 import City from './City';
+import { Example } from './component/Example';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
   },[search])
   console.log(search);
   return (
+    <>
     <div className="App my-4 p-3 text-xl font-bold text-red-700 bg-slate-300">
       How's The Weather ?<br></br>
       <div className='max-w-sm m-auto p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 text-center' id="card-weather">
@@ -29,6 +31,8 @@ function App() {
         {city && <City city={city} />}
       </div>
     </div>
+    <Example/>
+    </>
   );
 }
 
