@@ -111,7 +111,7 @@ const City = ({ city }) => {
     <div className="container">
       <div className="contain-weather">
         <div className="weather-card">
-          <h1 className="text-2xl weather_statu">{renderWeatherIcon(city.weather[0].main)}</h1>
+          <div className="text-2xl weather_statu">{renderWeatherIcon(city.weather[0].main)}</div>
         </div>
         <div className="weather-context">
           <h1 className="text-3xl font-bold">{city.main.temp} °C</h1>
